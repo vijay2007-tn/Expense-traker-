@@ -1,0 +1,39 @@
+:root{--bg:#f3f6fb;--card:#fff;--text:#1d2433;--muted:#6b7488;--primary:#2f6fed;--inc:#1e9e5a;--exp:#e04848;--line:#e3e8f1}
+*{box-sizing:border-box}
+body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--text)}
+.top{background:linear-gradient(90deg,#1b3a8a,#2f6fed);color:#fff;padding:16px 24px}
+.top h1{margin:0;font-size:1.5rem}
+main{max-width:1100px;margin:auto;padding:20px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-bottom:18px}
+.card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 2px 8px #0001;border-left:6px solid var(--primary)}
+.card span{display:block;color:var(--muted);font-size:.9rem}
+.card b{font-size:1.7rem}
+.card.inc{border-color:var(--inc)}.card.exp{border-color:var(--exp)}
+.panel{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 2px 8px #0001;margin-bottom:18px}
+.panel h2{margin:0 0 12px;font-size:1.1rem;display:flex;justify-content:space-between;align-items:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;align-items:end}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+input,select{padding:9px;border:1px solid var(--line);border-radius:8px;font-size:.95rem;width:100%}
+.row input{flex:1;width:auto}
+label{font-size:.85rem;color:var(--muted);display:flex;flex-direction:column;gap:3px}
+button{padding:9px 16px;border:0;border-radius:8px;cursor:pointer;font-size:.95rem}
+.primary{background:var(--primary);color:#fff}
+.ghost{background:#e9eef8;color:var(--text)}
+.btns{display:flex;gap:8px}
+.msg{color:var(--exp);margin:8px 0 0;min-height:1em;font-size:.9rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.chip{background:#e9eef8;padding:5px 10px;border-radius:20px;font-size:.88rem;display:flex;gap:6px;align-items:center}
+.chip button{background:none;padding:0 2px;color:var(--exp);font-weight:bold}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th,td{padding:9px 8px;text-align:left;border-bottom:1px solid var(--line)}
+th{background:#f5f8fd}
+.income-amt{color:var(--inc);font-weight:600}.expense-amt{color:var(--exp);font-weight:600}
+td button{padding:4px 9px;font-size:.82rem;margin-right:4px}
+.edit{background:#fff3cd}.del{background:#fde2e2}
+.empty{text-align:center;color:var(--muted);padding:16px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.two .panel{margin:0}
+.panel h2 select{width:auto}
+canvas{width:100%;height:auto}
+@media(max-width:800px){.two{grid-template-columns:1fr}}
